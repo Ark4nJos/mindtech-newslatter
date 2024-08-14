@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for("static", filename="/css/styles.css")}}" />
+    <title>Newsletter Mindtech</title>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
         </div>
         <div>
             <br>
-            <img src="static/imagens/logo.png"></img>
+            <img src="{{url_for("static", filename="/img/logo.png")}}">
         </div>
     </div>
 </body>

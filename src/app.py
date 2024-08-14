@@ -40,12 +40,8 @@ def del_email():
             cur = db.cursor()
             cur.execute("DELETE FROM email WHERE email= ?", (email,))
             db.commit()
-            
-            if cur.rowcount == 0:
-                msg = 'E-mail não foi encontrado. Tente novamente.'
-                return render_template('error.html', msg=msg)
             msg = f'E-mail {email} descadastrado com sucesso!'
-            return render_template('confirmacao_del.html', msg=msg)
+            return render_template('confirm_del.html', msg=msg)
     except Exception as e:
         db.rollback()
         msg = 'E-mail não encontrado.'

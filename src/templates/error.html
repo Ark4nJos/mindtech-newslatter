@@ -2,10 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Confirmação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Newsletter Mindtech</title>
 </head>
 <body>
-    <img src="static/imagens/aviso.png"></img>
+    <img src="{{url_for("static", filename="/img/aviso.png")}}">
     <h1>{{ msg }}</h1>
     <a href="/">Voltar</a>
 </body>

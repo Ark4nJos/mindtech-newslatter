@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Newsletter Mindtech</title>
 </head>
 
 <body>
     <div>
         <div>
             <h1>Delete-se agora!</h1>
-            <form action="del_email" method="post">
+            <form action="{{url_for('del_email')}}" method="post">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" placeholder="email@email.com" name="email" required>
                 <input type="submit" value="Inscreva-se">
@@ -18,7 +19,7 @@
         </div>
         <div>
             <br>
-            <img src="static/imagens/logo.png"></img>
+            <img src="{{url_for("static", filename="/img/logo.png")}}">
         </div>
     </div>
 </body>
