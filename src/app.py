@@ -18,12 +18,14 @@ def add_email():
     if request.method == 'POST':
         email = request.form['email']
         try:
+            # define a conexão com o banco de dados
             with sql.connect(diretorio_db) as db:
                 cur = db.cursor()
                 cur.execute("INSERT into email(email) VALUES (?)", (email,))
                 db.commit()
                 msg = 'Obrigado por se inscrever na nossa newsletter!'
                 return render_template('confirmacao.html', msg=msg)
+            # verifica erros e/ou se o e-mail já se encontra no banco de dados
         except sql.IntegrityError:
             msg = 'E-mail já cadastrado. Tente novamente'
             return render_template('error.html', msg=msg)
@@ -44,6 +46,7 @@ def del_email():
             cur = db.cursor()
             cur.execute("DELETE FROM email WHERE email= ?", (email,))
             db.commit()
+            #verifica se o e-mail está n banco de dados
             if cur.rowcount == 0:
                 msg = f'E-mail {email} não encontrado no banco de dados.'
                 return render_template('error.html', msg=msg)
