@@ -40,13 +40,14 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    height: 60%;
+    height: 65%;
     max-width: 70%;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     background: radial-gradient(circle at center, rgba(22, 92, 222, 0.8), transparent 70%),
         linear-gradient(to right, #000000 50%, #000000 50%);
+    padding: 45px;
 }
 
 #text-sec {
