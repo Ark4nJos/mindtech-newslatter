@@ -77,17 +77,20 @@ body {
     line-height: 1.4;
 }
 
+#text-sec p b {
+    width: 50%;
+}
+
 #text-sec p span {
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 15px;
     text-align: center;
-    width: 20px;
-    height: 20px;
     color: #000000;
     border-radius: 100%;
     background-color: #165cde;
     display: inline-block;
     font-size: 15px;
+    padding: 4px 7px 4px 7px;
 }
 
 #text-sec button {
