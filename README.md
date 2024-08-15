@@ -4,7 +4,7 @@ Projeto web para gerenciar uma newsletter, permitindo aos usuários se inscrever
 
 ## Pré-requisitos
 
-- **Python 3.7+**: Pode baixar a versão mais recente do [site oficial do Python](https://www.python.org/downloads/).
+- **Python 3.7+**: Pode baixar a versão mais recente noo [site oficial do Python](https://www.python.org/downloads/).
 
 ## Instalação
 
