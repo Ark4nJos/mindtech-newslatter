@@ -8,8 +8,8 @@ cursor.execute("CREATE TABLE IF NOT EXISTS email (id INTEGER PRIMARY KEY AUTOINC
 
 
 if __name__ == '__main__':
-    cursor.execute("INSERT INTO email VALUES(1, 'rodrigo@email.com')")
-    db.commit()
+    # cursor.execute("INSERT INTO email VALUES(1, 'email@email.com')")
+    # db.commit()
     cursor.execute('SELECT * FROM email')
     print(cursor.fetchall())
     db.close()

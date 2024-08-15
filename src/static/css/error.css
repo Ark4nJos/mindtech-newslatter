@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Inter-VariableFont_slnt, wght;
+    src: url(/static/font/);
+}
+
 body {
     background-color: #092456;
     margin: 0;
@@ -14,53 +19,33 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 60%;
     max-width: 70%;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    background: radial-gradient(circle at center, rgba(22, 92, 222, 0.8), transparent 70%),
+    background: radial-gradient(circle at center, rgba(22, 92, 222, 0.8), transparent 67%),
         linear-gradient(to right, #000000 50%, #000000 50%);
 }
 
 #text-sec {
-    padding: 30px;
-    flex: 1;
+    padding: 20px;
+    margin: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #text-sec h1 {
     margin-bottom: 15px;
-    font-size: 35px;
+    font-size: 25px;
     color: #ffffff;
-}
-
-#text-sec p intro {
-    font-size: 18px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-    color: #ffffff;
-}
-
-#text-sec p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    margin: 0 0 20px 0;
-    line-height: 1.4;
-}
-
-#text-sec p span {
-    font-weight: bold;
-    margin-right: 10px;
     text-align: center;
-    width: 20px;
-    height: 20px;
-    color: #000000;
-    border-radius: 100%;
-    background-color: #165cde;
-    display: inline-block;
-    font-size: 15px;
 }
 
 #text-sec button {
@@ -72,25 +57,12 @@ body {
     font-size: 15px;
     transition: background 0.3s;
     padding: 8px;
-    margin: 10px 0 0 14%;
+    margin: 10px 0 0 0;
     border: none;
     width: 70%;
     display: flex;
     justify-content: center;
-}
-
-#text-sec button a {
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-}
-
-#text-sec button:hover {
-    background-color: #092456;
-}
-
-#text-sec button a:hover {
-    text-decoration: underline;
+    align-items: center;
 }
 
 #text-sec form {
@@ -99,6 +71,7 @@ body {
     margin-top: 15px;
     text-align: left;
     background-color: transparent;
+    width: 100%;
 }
 
 #text-sec form label {
@@ -111,7 +84,7 @@ body {
 #text-sec form input[type="email"] {
     border: 1px solid #caddff;
     border-radius: 6px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 16px;
     width: 100%;
     background: #ffffff;
@@ -135,20 +108,44 @@ body {
     background: #092456;
 }
 
+#text-sec button a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+#text-sec button:hover {
+    background-color: #092456;
+}
+
+#text-sec button a:hover {
+    text-decoration: underline;
+}
+
 .img {
-    display: -webkit-inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-
 }
 
 .img img {
-    max-width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
+    background: transparent;
+    align-items: center;
+    background: transparent;
+    width: 70%;
+    border: #165cde;
+}
+
+.logo {
+    width: 80%;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }

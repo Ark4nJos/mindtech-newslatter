@@ -19,19 +19,23 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    background: radial-gradient(circle at center, rgba(22, 92, 222, 0.8), transparent 70%),
+    background: radial-gradient(circle at center, rgba(22, 92, 222, 0.8), transparent 67%),
         linear-gradient(to right, #000000 50%, #000000 50%);
 }
 
 #text-sec {
-    padding: 30px;
-    flex: 1;
+    padding: 20px;
+    margin: 300px;
+    justify-content: center;
+    display: block;
+    align-items: center;
 }
 
 #text-sec h1 {
     margin-bottom: 15px;
     font-size: 35px;
     color: #ffffff;
+    text-align: center;
 }
 
 #text-sec p intro {
@@ -48,19 +52,7 @@ body {
     font-size: 16px;
     margin: 0 0 20px 0;
     line-height: 1.4;
-}
-
-#text-sec p span {
-    font-weight: bold;
-    margin-right: 10px;
     text-align: center;
-    width: 20px;
-    height: 20px;
-    color: #000000;
-    border-radius: 100%;
-    background-color: #165cde;
-    display: inline-block;
-    font-size: 15px;
 }
 
 #text-sec button {
@@ -93,57 +85,12 @@ body {
     text-decoration: underline;
 }
 
-#text-sec form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    text-align: left;
-    background-color: transparent;
-}
-
-#text-sec form label {
-    margin-bottom: 5px;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#text-sec form input[type="email"] {
-    border: 1px solid #caddff;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    width: 100%;
-    background: #ffffff;
-    color: #000000;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-#text-sec form input[type="submit"] {
-    border-radius: 6px;
-    background: #165cde;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s;
-}
-
-#text-sec form input[type="submit"]:hover {
-    background: #092456;
-}
-
 .img {
-    display: -webkit-inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-
+    border: #000000;
 }
 
 .img img {
@@ -151,4 +98,18 @@ body {
     height: auto;
     margin: 0 auto;
     display: block;
+    background: transparent;
+    border-radius: 100%;
+    align-items: center;
+
+}
+
+.logo {
+    width: 80%;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }

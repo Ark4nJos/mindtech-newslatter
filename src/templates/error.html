@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for("static", filename="/css/error.css")}}" />
     <title>Newsletter Mindtech</title>
 </head>
 <body>
-    <img src="{{url_for("static", filename="/img/aviso.png")}}">
-    <h1>{{ msg }}</h1>
-    <a href="/">Voltar</a>
+    <div id="conteiner">
+        <div id="text-sec">
+            <div class="img">
+                <img class='imagem' src="{{url_for("static", filename="/img/warn.png")}}">
+            </div>
+            <h1>{{ msg }}</h1>
+            <img class='logo' src="{{url_for("static", filename="/img/logo-mindtech.png")}}">
+            <button type='submit'><a href="/">Voltar</a></button>
+        </div>
+    </div>
 </body>
 </html>

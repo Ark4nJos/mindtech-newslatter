@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for("static", filename="/css/error.css")}}" />
     <title>Newsletter Mindtech</title>
 </head>
-
 <body>
-    <div>
-        <div>
-            <h1>Delete-se agora!</h1>
+    <div id="conteiner">
+        <div id="text-sec">
+            <div class="img">
+                <img class='logo' src="{{url_for("static", filename="/img/logo-mindtech.png")}}">
+            </div>
+            <h1>Digite o e-mail para descadastrar do nosso Newsletter.</h1>
             <form action="{{url_for('del_email')}}" method="post">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" placeholder="email@email.com" name="email" required>
-                <input type="submit" value="Inscreva-se">
+                <input type="submit" value="Cancelar inscrição">
             </form>
-        </div>
-        <div>
-            <br>
-            <img src="{{url_for("static", filename="/img/logo.png")}}">
+            <button type='submit'><a href="/">Voltar</a></button>
         </div>
     </div>
 </body>
-
 </html>
+

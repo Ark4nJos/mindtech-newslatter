@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for("static", filename="/css/styles_conf.css")}}" />
     <title>Newsletter Mindtech</title>
 </head>
 <body>
-    <img src="{{url_for("static", filename="/img/icone.svg")}}">
-    <h1>{{ msg }}</h1>
-    <p>
-        Agradecemos por ter feito parte da nossa comunidade. Se você mudar de ideia, 
-        estamos sempre à disposição.
-    </p>
-    <a href="/">Voltar</a>
+    <div id="conteiner">
+        <div id="text-sec">
+            <div class="img">
+                <img class='imagem' src="{{url_for("static", filename="/img/icone.svg")}}">
+            </div>
+            <h1>{{ msg }}</h1>
+            <p>
+                Agradecemos por ter feito parte da nossa comunidade. Se você mudar de ideia, 
+                estamos sempre à disposição.
+            </p>
+            <img class='logo' src="{{url_for("static", filename="/img/logo-mindtech.png")}}">
+            <button type='submit'><a href="/">Voltar</a></button>
+        </div>
+    </div>
 </body>
 </html>

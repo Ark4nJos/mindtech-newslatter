@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for("static", filename="/css/styles_conf.css")}}" />
     <title>Newsletter Mindtech</title>
 </head>
 <body>
-    <h1>{{ msg }}</h1>
-    <p>
-        Agora você faz parte da comunidade Mindtech e está a um passo de ficar atualizado com as 
-        últimas inovações e tendências em Internet das Coisas (IoT).
-    </p>
-    <a href="/">Voltar</a>
+    <div id="conteiner">
+        <div id="text-sec">
+            <div class="img">
+                <img class='imagem' src="{{url_for("static", filename="/img/icone.svg")}}">
+            </div>
+            <h1>{{ msg }}</h1>
+            <p id="intro">
+                Agora você faz parte da comunidade Mindtech e está a um passo de ficar atualizado com as 
+                últimas inovações e tendências em Internet das Coisas (IoT).
+            </p>
+            <img class='logo' src="{{url_for("static", filename="/img/logo-mindtech.png")}}">
+            <button type='submit'><a href="/">Voltar</a></button>
+        </div>
+    </div>
 </body>
 </html>

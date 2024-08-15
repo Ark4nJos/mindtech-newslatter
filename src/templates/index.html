@@ -17,21 +17,21 @@
                 nossas atualizações diretamente em sua caixa de entrada.
             </p>
             <p><span>✔</span>
-                <b> Guias e Tutoriais: </b>Aprenda como implementar e otimizar soluções
+                <b> Guias e Tutoriais: </b> Aprenda como implementar e otimizar soluções
                 de IoT para sua empresa.
             </p>
             <p><span>✔</span>
-                <b> Notícias e Tendências: </b>Fique por dentro das últimas novidades e avanços
+                <b> Notícias e Tendências: </b> Fique por dentro das últimas novidades e avanços
                 no mundo do IoT.
             </p>
             <p><span>✔</span>
-                <b> Ofertas e Promoções: </b>Receba ofertas especiais e promoções exclusivas para
+                <b> Ofertas e Promoções: </b> Receba ofertas especiais e promoções exclusivas para
                 assinantes da nossa newsletter.
             </p>
             <form action="add_email" method="post">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" placeholder="email@email.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" name="email" required>
-                <input type="submit" value="Inscreva-se">
+                <input id="submit" type="submit" value="Inscreva-se">
             </form>
             <button type="submit"><a href="{{ url_for('del_html')}}">Cancelar inscrição</a></button>
         </div>
