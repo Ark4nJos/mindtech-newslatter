@@ -1,6 +1,6 @@
 # Mindtech Newsletter
 
-Pprojeto web para gerenciar uma newsletter, permitindo aos usuários se inscrever e remover seus emails do banco de dados. A aplicação é construída com Python e Flask e utiliza um banco de dados SQLite.
+Projeto web para gerenciar uma newsletter, permitindo aos usuários se inscrever e remover seus emails do banco de dados. A aplicação é construída com Python e Flask e utiliza um banco de dados SQLite.
 
 ## Pré-requisitos
 
