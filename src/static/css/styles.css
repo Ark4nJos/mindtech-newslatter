@@ -70,16 +70,11 @@ body {
 }
 
 #text-sec p {
-    display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    margin: 0 0 20px 0;
     line-height: 1.4;
-}
-
-#text-sec p b {
-    width: 50%;
+    margin: 20px;
 }
 
 #text-sec p span {
@@ -103,7 +98,7 @@ body {
     font-size: 15px;
     transition: background 0.3s;
     padding: 8px;
-    margin: 10px 0 0 14%;
+    margin: 15px 0 0 12%;
     border: none;
     width: 70%;
     display: flex;
@@ -128,6 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    margin-right: 35px;
     text-align: left;
     background-color: transparent;
 }
