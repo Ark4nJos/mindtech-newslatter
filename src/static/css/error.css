@@ -78,12 +78,16 @@ body {
     font-size: 15px;
     transition: background 0.3s;
     padding: 8px;
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
     border: none;
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button a {
+    padding: 5px 150px;
 }
 
 #text-sec form {
@@ -92,7 +96,7 @@ body {
     margin-top: 15px;
     text-align: left;
     background-color: transparent;
-    width: 100%;
+    width: 70%;
 }
 
 #text-sec form label {
@@ -133,14 +137,11 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
+    padding: 5px 100px;
 }
 
 #text-sec button:hover {
     background-color: #092456;
-}
-
-#text-sec button a:hover {
-    text-decoration: underline;
 }
 
 .img {
@@ -174,7 +175,7 @@ body {
 
 .imagem {
     background: transparent;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 120%;
 }

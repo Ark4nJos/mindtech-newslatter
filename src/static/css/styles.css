@@ -98,9 +98,9 @@ body {
     font-size: 15px;
     transition: background 0.3s;
     padding: 8px;
-    margin: 15px 0 0 12%;
+    margin: 15px 0 0 15%;
     border: none;
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
 }
@@ -109,14 +109,11 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
+    padding: 5px 100px;
 }
 
 #text-sec button:hover {
     background-color: #092456;
-}
-
-#text-sec button a:hover {
-    text-decoration: underline;
 }
 
 #text-sec form {
